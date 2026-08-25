@@ -195,8 +195,7 @@ export default function AuthPage() {
           relative md:absolute inset-0 z-10 flex flex-col justify-center bg-zinc-900 dark:bg-zinc-950 text-white p-8 md:p-16 lg:p-24 overflow-hidden
           transition-[clip-path] duration-1000 ease-[cubic-bezier(0.76,0,0.24,1)]
           [clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]
-          md:[&.is-split]:[clip-path:polygon(0_0,60%_0,40%_100%,0_100%)]
-          ${isSplit ? 'is-split' : ''}
+          ${isSplit ? 'md:[clip-path:polygon(0_0,60%_0,40%_100%,0_100%)]' : ''}
         `}
       >
         <div className="absolute inset-0 z-0 opacity-20">
