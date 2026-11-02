@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wardrobe AI — Digital Twin Wardrobe & Contextual Styling Engine
 
-## Getting Started
+> An end-to-end full-stack SaaS that digitizes physical wardrobes, solves morning decision paralysis, and provides personalized virtual styling using multi-modal AI—all constrained to the clothes users already own.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡 Executive Summary & Problem Space
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Most wardrobe applications fail because they try to sell users *more* clothes rather than unlocking the utility of the clothes they already own. Physical wardrobe coordination is inefficient:
+1. **Decision Fatigue:** The average person wastes 15–20 minutes daily choosing outfits, leading to friction and repetitive style habits.
+2. **Underutilized Inventory:** Users often wear only 20% of their closet because they cannot visualize new combinations without the physical friction of trying on clothes.
+3. **The Try-On Friction:** Experimenting with unconventional or elevated looks requires physical trial, error, and wasted time.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**The Solution:** Wardrobe AI replicates the user's physical wardrobe into an isolated digital inventory. Users can experiment with aesthetics (from everyday minimalist to bold and avant-garde), emulate specific style inspirations, and preview complete, coordinated looks with precise wearing notes—without touching a physical hanger.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚡ Key Value Propositions
 
-To learn more about Next.js, take a look at the following resources:
+- **True Wardrobe Utility:** Combines, layers, and styles items *strictly* from the user’s authenticated inventory—no phantom recommendations or unsolicited e-commerce push.
+- **Zero-Cost Client-Side Segmentation:** Removes backgrounds and isolates garment cutouts directly inside the browser using WebAssembly/WebGPU, eliminating recurring vision infrastructure costs.
+- **Multimodal AI Tagging:** Automatically parses and structures uploaded clothing metadata (color harmony, silhouette, category, formality rating, occasion tags) via Google Gemini Vision.
+- **Algorithmic Vibe Customization:** Matches user aesthetic intent (e.g., *Streetwear, Smart Casual, Old Money, Bold/Outlandish*) with outfit generation algorithms that respect proportion balancing and color theory.
+- **Multi-Day Rotation Planning:** Generates 5-day workweek and 7-day scheduled plans with built-in deduplication logic to prevent consecutive garment repeats.
+- **Credit-Gated Architecture:** Built-in atomic credit tracking and ledger enforcement ensuring sustainable API usage per account.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠 System Architecture & Technical Flow
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
